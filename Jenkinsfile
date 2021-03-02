@@ -7,7 +7,7 @@ node {
         sh 'docker build -t ankimittal/k8-1 .'
     }
     stage('Docker-push'){
-        docker.withRegistry('https://registry.hub.docker.com','Docker'){
+        docker.withRegistry('https://registry.hub.docker.com','DockerId'){
             def customImage = docker.build('ankimittal/k8-1')
             customImage.push()
         }
