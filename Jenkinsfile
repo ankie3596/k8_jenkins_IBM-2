@@ -1,6 +1,6 @@
 node {
     stage('Get Source'){
-        git 'https://github.com/rtxverma123/flaskrunkubernetes.git'
+        git 'https://github.com/ankie3596/k8_jenkins_IBM-2.git'
         
     }
     stage('Docker-build'){
