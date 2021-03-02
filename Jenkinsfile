@@ -11,8 +11,8 @@ node {
         }
     }
     stage('Kubernetes pod'){
-        sh 'kubectl apply -f servicepy.yaml'
-        sh 'kubectl apply -f flask-deployment.yaml'
-        sh 'kubectl get pods'
+        bat 'kubectl apply -f servicepy.yaml'
+        bat 'kubectl apply -f flask-deployment.yaml'
+        bat 'kubectl get pods'
     }
 }
