@@ -12,7 +12,7 @@ node {
     stage('Authenticate'){
         
             bat ''' ibmcloud login --apikey Vbm-YT7nOx5vONApyYx0wdycgVn9_hxRd5a4GHvDqnop  -r  us-south -g Default
-                    ibmcloud ks cluster config --cluster c0rj4r1d0huad5id0ut0
+                    
              '''
         
     }
