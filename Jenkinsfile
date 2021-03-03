@@ -18,8 +18,7 @@ node {
             ibmcloud plugin list
             ibmcloud ks cluster config --cluster c0rj4r1d0huad5id0ut0
                     
-             '''
-        
+             '''      
     }
     
     stage('Kubernetes pod'){
