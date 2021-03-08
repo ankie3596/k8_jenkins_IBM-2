@@ -2,13 +2,17 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: k8_app-ingress
+  namespace: Default
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-  - host: pywebapp.com
+  - host: pywebapp-test.com
     http:
        paths:
        - backend:
-            serviceName: k8sapp
-            servicePort: 80
+            service:
+                serviceName: k8sapp
+                port:
+                    number: 5001
+      
