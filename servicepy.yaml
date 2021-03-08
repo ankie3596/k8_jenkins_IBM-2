@@ -5,10 +5,10 @@ metadata:
 spec:
    selector: 
        name: flask-app-test
-   type: nodePort
+   type: LoadBalancer    
+   externalIPs: 
+    - 192.168.1.11
    ports: 
       - protocol: TCP
         targetPort: 30017
         port: 30017
-        targetPort: 30017
-
