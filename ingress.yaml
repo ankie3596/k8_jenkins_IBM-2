@@ -1,0 +1,14 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: pywebapp-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  - host: pywebapp.com
+    http:
+       paths:
+       - backend:
+            serviceName: pywebapp-service
+            servicePort: 80
