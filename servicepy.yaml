@@ -5,8 +5,10 @@ metadata:
 spec:
    selector: 
        name: k8-1
+   type: nodePort
    ports: 
       - protocol: TCP
+        targetPort: 30017
         port: 30017
         targetPort: 30017
 
