@@ -26,6 +26,7 @@ node {
         bat "kubectl config current-context"
         bat 'kubectl apply -f servicepy.yaml'
         bat 'kubectl apply -f flask-deployment.yaml'
+        bat 'kubectl apply -f ingress.yml'
         bat 'kubectl get pods'
     }
 }
