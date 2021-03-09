@@ -25,7 +25,6 @@ node {
         bat "ibmcloud ks cluster config --cluster c0rj4r1d0huad5id0ut0"
         bat "kubectl config current-context"
         bat 'kubectl apply -f servicepy.yaml'
-        bat 'kubectl apply -f ingress.yaml --validate=false'
         bat 'kubectl apply -f flask-deployment.yaml'
         
         bat 'kubectl get pods'
