@@ -1,16 +1,15 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: flask-app-test
+  name: flask-app
 spec:
-  replicas: 4
   selector:
     matchLabels:
-      name: flask-app-test
+      name: flask-app
   template:
     metadata:
       labels:
-        name: flask-app-test
+        name: flask-app
     spec:
       containers:
       - name: myapp
