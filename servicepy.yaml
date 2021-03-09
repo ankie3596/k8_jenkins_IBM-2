@@ -1,13 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata: 
-     name: flash-app-test
+     name: flash-app
 spec:
    selector: 
-       name: flask-app-test
-   type: LoadBalancer    
-   externalIPs: 
-    - 192.168.1.11
+       name: flask-app
    ports: 
       - protocol: TCP
         targetPort: 30017
